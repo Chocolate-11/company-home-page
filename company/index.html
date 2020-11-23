@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>项目二测试：班级  姓名 学号</title>
+		<meta name="viewport"
+          	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<style type="text/css">
+			body{
+				font: 400 15px Lato, sans-serif;
+				color: #818181;
+				line-height: 1.8;
+				text-align: center;
+			}
+			.nav{
+				background: #f4511e;
+				font-family: Montserrat, sans-serif;
+			}
+			
+			@media (max-width: 768px){
+	            #hide{
+	            	display: none;
+	            }
+	        }
+	        
+			@font-face {
+				font-family: 'Glyphicons Halflings';
+				src: url(font/glyphicons-halflings-regular.eot);
+				src: url('font/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('font/glyphicons-halflings-regular.woff') format('woff'), url('font/glyphicons-halflings-regular.ttf') format('truetype'), url('font/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+			}
+			.glyphicon {
+				position: relative;
+				top: 1px;
+				display: inline-block;
+				font-family: 'Glyphicons Halflings';
+				-webkit-font-smoothing: antialiased;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 1;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+        	描述：第一部分响应式导航条（20分）
+        	要求： 1.导航条背景颜色：#f4511e；
+		          2.字体： Montserrat, sans-serif;
+		          3.文字颜色: #FFFFFF；
+		          4.文字内容：ABOUT SERVICES  PORTFOLIO PRICING CONTACT
+        -->
+        <nav class="nav navbar-inverse">
+        	<div class="navbar-header" style="margin-left: 30px;">
+		        <button  class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background: #f4511e;">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		        </button>
+		        <a href="#" class="navbar-brand" style="color: #FFFFFF;">LOGO</a>
+		    </div>
+		    <form class="collapse navbar-collapse navbar-right" role="search" style="margin-right: 30px;">
+		    	<ul class="nav navbar-nav ">
+		            <li><a class="active" href="#" style="color: #FFFFFF;">ABOUT</a></li>
+		            <li><a href="#" style="color: #FFFFFF;">SERVICES</a></li>
+		            <li><a href="#" style="color: #FFFFFF;">PORTFOLIO</a></li>
+		            <li><a href="#" style="color: #FFFFFF;">PRICING</a></li>
+		            <li><a href="#" style="color: #FFFFFF;">CONTACT</a></li>
+		       </ul>
+		    </form>
+        </nav>
+        
+        <!--
+        	描述：第二部分:巨幕   10分
+        	要求：1.请在div中添加未完成的表单
+        -->   
+        <div class="jumbotron"style="background: #f4511e;text-align: center;">
+        	<h1 style="text-align: center;">Company</h1>
+        	<p style="text-align: center;">We specialize in blablabla</p>
+        	<div class="input-group" style="width: 480px;margin:0 auto;padding: 5px;">
+		        <input type="text" class="form-control" placeholder="Email Address">
+		        <span class="input-group-btn">
+		            <button class="btn btn-success" type="button">subcribe</button>
+		        </span>
+		    </div>
+        </div>
+        
+        <!--
+        	描述：第三部分：公司介绍  20分
+        	请使用媒体查询+栅格系统+按钮+图标完善第三部分内容
+        	要求：1.图标类型： glyphicon-globe；
+	        	  2.大小font-size: 200px;
+	        	  3.颜色: #f4511e;
+	        	  4.大屏幕下分两列，小屏幕下独占一列    
+	        	  5.小屏幕下第三部分隐藏不可见
+        -->
+        <div class="container" id="hide">
+        	<div class="row">
+        		<div class="col-md-6">
+        			<h1>About Company Page</h1>
+        			<p>Lorem ipsum..</p>
+        			<p>Lorem ipsum..</p>
+        			<button type="button" class="btn btn-default">Get in Touch</button>
+        		</div>
+        		<div class="col-md-6" style="font-size: 200px;">
+        			<div class="glyphicon glyphicon-globe" style="color: #f4511e;"></div>
+        		</div>
+        	</div>
+        </div>
+        
+        <!--
+        	描述：第四部分：SERVICES服务  （15分）
+        	类似第三部分，请使用栅格系统+图标完善第三部分内容
+        	要求：1.图标类型： glyphicon-off  glyphicon-heart glyphicon-lock
+        	      glyphicon-leaf  glyphicon-certificate glyphicon-wrench；
+	        	  2.图标大小font-size: 50px;
+	        	  3.颜色: #f4511e;
+	        	  4.大屏幕下分三列，小屏幕下独占一列
+	                文本： <h4>POWER LOVE JOB DONE</h4>
+        	      <p>Lorem ipsum dolor sit amet..</p>
+        -->
+        <div class="container">
+        	<h1>SERVICES</h1>
+        	<p>What we offer</p>
+        	<p>&nbsp;</p>
+            <div class="row">
+            	<div class="col-md-4">
+            		<h1 class="glyphicon glyphicon-off" style="color: #f4511e;"></h1>
+            		<h4>POWER</h4>
+            		<p>Lorem ipsum dolor sit amet..</p>
+            	</div>
+            	<div class="col-md-4">
+            		<h1 class="glyphicon glyphicon-heart" style="color: #f4511e;"></h1>
+            		<h4>LOVE</h4>
+            		<p>Lorem ipsum dolor amet..</p>
+            	</div>
+            	<div class="col-md-4">
+            		<h1 class="glyphicon glyphicon-lock" style="color: #f4511e;"></h1>
+            		<h4>JOB DONE</h4>
+            		<p>Lorem ipsum dolor sit amet..</p>
+            	</div>
+            </div>
+            <div class="row">
+            	<div class="col-md-4">
+            		<h1 class="glyphicon glyphicon-leaf" style="color: #f4511e;"></h1>
+            		<h4>POWER</h4>
+            		<p>Lorem ipsum dolor sit amet..</p>
+            	</div>
+            	<div class="col-md-4">
+            		<h1 class="glyphicon glyphicon-certificate" style="color: #f4511e;"></h1>
+            		<h4>LOVE</h4>
+            		<p>Lorem ipsum dolor sit amet..</p>
+            	</div>
+            	<div class="col-md-4">
+            		<h1 class="glyphicon glyphicon-wrench" style="color: #f4511e;"></h1>
+            		<h4>JOB DONE</h4>
+            		<p>Lorem ipsum dolor sit amet..</p>
+            	</div>
+            </div>
+        </div>
+        <!--
+        	描述：第五部分：Portfolio 缩略图 （15分）
+        	要求： 1.缩略图区域背景颜色：#f6f6f6；
+        	      2.图片去掉边框线
+        	      3.图片大小继承父元素大小
+        	      4.标题居中
+        	文本：New York Paris San Francisco
+        	We built New York   Yes, we built Pari  Yes, we built San Francisco
+        -->
+        	<p>&nbsp;</p>   
+            <p>&nbsp;</p>
+        <div class="container">
+        	<h2 style="text-align: center;">Portfolio</h2>
+        	<h4 style="text-align: center;">What we have created</h4>
+        	<div class="row" style="background: #f6f6f6;">
+		        <div class="  col-md-4">
+		            <div class="thumbnail">
+		                <img src="img/newyork.jpg" alt="">
+		                <div class="caption">
+		                    <h3>New York</h3>
+		                    <p>We built New York</p>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="  col-md-4">
+		            <div class="thumbnail">
+		                <img src="img/paris.jpg" alt="">
+		                <div class="caption">
+		                    <h3>Paris</h3>
+		                    <p>es, we built Pari</p>
+		                </div>
+		            </div>
+		        </div>
+		        <div class="  col-md-4" >
+		            <div class="thumbnail">
+		                <img src="img/sanfran.jpg" alt="">
+		                <div class="caption">
+		                    <h3>Francisco</h3>
+		                    <p>Yes, we built San Francisco</p>
+		                </div>
+		            </div>
+		        </div>
+        	</div>
+        </div>
+        
+        <!--
+        	描述：第六部分：表单（15分）
+        	要求： 1.区域背景颜色：#f6f6f6；
+        	      2.图标采用默认大小
+        	图标类型：glyphicon-map-marker glyphicon-phone glyphicon-envelope
+        	文本：Chicago, US
+        -->
+        <div class="container" style="background: #f6f6f6;">
+        	<div class="row">
+        		<div class="col-sm-5"></div>
+        		<div class="col-sm-7">
+        			<h2>CONTACT</h2>
+        		</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-md-6">
+        			<p>Contact us and we'll get back to you within 24 hours.</p>
+        			<p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+        			<p><span class="glyphicon glyphicon-phone"></span>+00 1515151515</p>
+        			<p><span class="glyphicon glyphicon-envelope"></span>myemail@something.com</p>
+        		</div>
+        		<div class="col-md-6">
+        			<div class="row">
+        				<div class="col-md-6 form-group">
+        					<input type="text" placeholder="Name"/>
+        				</div>
+        				<div class="col-md-6 form-group">
+        					<input type="text" placeholder="Email"/>
+        				</div>
+        			</div>
+                    <!--描述：文本域组件-->
+        			<div class="row">
+        				<div class="col-md-12 form-group">
+        					<textarea class="form-control" placeholder="Comment" rows="5"></textarea>
+        				</div>
+        			</div>
+        			<div class="row">
+        				<div class="col-md-2 col-md-offset-10">
+        					<button type="button" class="btn btn-primary">Send</button>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <!--
+        	描述：第七部分 页面脚部  （5分）
+        	请在此区域标注：个人 班级 姓名 学号
+        -->
+        <footer class="container-fluid bg-grey text-center">
+        	<div class="row">
+        		<div class="col-sm-12">
+        			<a href="#"><span class="glyphicon glyphicon-chevron-up logo-min"></span></a>
+        			<p>版权说明@：个人  18745  郭智慧  201807040537 </p>
+        		</div>
+        	</div>
+        </footer>
+        <script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
